@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/Universitet logo.png">
+    <link rel="stylesheet" href="../style/css/style.css">
+    <link rel="stylesheet" href="../style/sass/style.css">
+    <link rel="stylesheet" href="../style/sass/maqola_yuborish.css">
+    <title>BuxDU newspaper</title>
+</head>
+<body>
+    <div id="menu">
+        <div class="container">
+            <a class="logo" href="../index.html">MJournal.uz</a>
+
+            <!-- <a href="../index.html">
+                <div class="btn">
+                    <p>Asosiy</p>
+                </div>
+            </a> -->
+            <a href="#">
+                <div class="btn active">
+                    <p>Maqola yuborish</p>
+                </div>
+            </a>
+            <a href="../html/yuborilgan_maqolalar.html">
+                <div class="btn">
+                    <p>Yuborilgan maqolalar</p>
+                </div>
+            </a>
+            <a href="../html/obuna.html">
+                <div class="btn">
+                    <p>Obuna bo‘lish</p>
+                </div>
+            </a>
+
+            <!-- <img src="../img/lupa.svg" alt="Qidiruv"> -->
+
+            <div class="user">
+                <div class="user_img" onclick="user_menu()">
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+
+                <h3 onclick="user_menu()">Sherzod Shokirov</h3>
+                
+                <ion-icon class="user_menu_open" onclick="user_menu()" name="caret-down-outline"></ion-icon>
+                <ion-icon style="display: none;" class="user_menu_close" onclick="user_menu_close()" name="caret-up-outline"></ion-icon>
+
+                <div class="user_menu" style="display: none;">
+                    <a href="#">Accountni sozlash</a>
+                    <a href="#">Chiqish</a>
+                </div>
+            </div>
+
+            <!-- <a href="../html/login.html">Kirish</a>
+
+            <a href="../html/register.html">
+                <div class="btns">
+                    <p>Ro‘yhatdan o‘tish</p>
+                </div>
+            </a> -->
+        </div>
+
+        <div class="res_container">            
+            <a class="logo" href="../index.html">MJournal.uz</a>
+            
+            <div class="search">
+                <!-- <label for="">
+                    <input type="search" name="" id="">
+                    <img src="../img/lupa.svg" alt="search">
+                </label> -->
+
+                <ion-icon id="Close" onclick="Close()" name="close-outline"></ion-icon>
+                <ion-icon id="Open" onclick="Open()" name="options-outline"></ion-icon>
+            </div>
+
+            <div id="menu_ver">
+                <!-- <a href="../index.html">
+                    <div class="btn">
+                        <p>Asosiy</p>
+                    </div>
+                </a> -->
+                <a href="#">
+                    <div class="btn active">
+                        <p>Maqola yuborish</p>
+                    </div>
+                </a>
+                <a href="../html/yuborilgan_maqolalar.html">
+                    <div class="btn">
+                        <p>Yuborilgan maqolalar</p>
+                    </div>
+                </a>
+                <a href="../html/obuna.html">
+                    <div class="btn">
+                        <p>Obuna bo‘lish</p>
+                    </div>
+                </a>
+
+                <!-- <a class="btn margin" href="./html/login.html">
+                    <div class="btns">
+                        <p>Kirish</p>
+                    </div>
+                </a>
+                <a class="btn margin" href="./html/register.html">
+                    <div class="btns">
+                        <p>Ro‘yhatdan o‘tish</p>
+                    </div>
+                </a> -->
+                
+                <!-- <div class="sign">
+                    <a href="../html/login.html">Kirish</a>
+
+                    <a href="../html/register.html">
+                        <div class="btns">
+                            <p>Ro‘yhatdan o‘tish</p>
+                        </div>
+                    </a>
+                </div> -->
+
+                <div id="user">
+                    <div class="user">
+                        <div class="user_img" onclick="user_menu1()">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+    
+                        <h3 onclick="user_menu1()">Sherzod Shokirov</h3>
+                        
+                        <ion-icon class="user_menu_open1" onclick="user_menu1()" name="caret-down-outline"></ion-icon>
+                        <ion-icon style="display: none;" class="user_menu_close1" onclick="user_menu_close1()" name="caret-up-outline"></ion-icon>
+        
+                        <div class="user_menu1" style="display: none;">
+                            <a href="#">Accountni sozlash</a>
+                            <a href="#">Chiqish</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bosh_joy"></div>
+
+                <div class="eslatma">
+                    <ion-icon onclick="eslatman_close()" name="close-outline"></ion-icon>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, molestias animi. Natus a cupiditate quas aliquam! Possimus deserunt quibusdam omnis iure. Laudantium iure quod dolor, quia nulla praesentium accusamus ea!</p>
+                </div>
+
+                <div class="mavzu">
+                    <input type="text" placeholder="Maqola mavzusi">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="joysss"></div>
+
+    <div class="container_title" id="container_title_close">
+        <div class="title">
+            <h3>Maqola yuborish qoidalari:</h3>
+            <p>Yuborayotgan maqolangiz o‘z qalamingizga mansub bo’lishi shart! :) Risus pharetra, maecenas habitant eu bibendum volutpat morbi vel. Tellus arcu est condimentum est. Sed faucibus parturient sodales non gravida nisl dapibus lectus. Ornare ut eu sit suscipit. Integer tincidunt neque pellentesque morbi lacinia donec</p>
+
+            <ion-icon onclick="container_title()" name="close-outline"></ion-icon>
+        </div>
+    </div>
+
+    <div class="begin"  id="begin_close">
+        
+        <div class="container_c">
+
+            <!-- <div class="text">
+                <h2>Maqola mavzusi:</h2>
+                <h2>Maqola qaysi fanga tegishli:</h2> 
+                <h2>Maqola haqida <br>qisqacha ma’lumot:</h2>
+                <p><b>DOC</b> yoki <b>PDF</b> fromatdagi <br>maqolangizni yuklang</p>
+
+            </div>
+
+            <div class="inputs">
+                <input class="mavzu" type="text" placeholder="Maqola mavzusini kiriting">
+
+                <select id="cars">
+                    <option value="volvo">Gumanitar fanlar</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
+
+                <textarea class="form-control" name="message" rows="5" placeholder="Maqola haqida yozing" required=""></textarea>
+                <label for="">                    
+                    <input type="file" name="" id=""/>
+                    <p>Maqolani biriktirish</p>
+                    <ion-icon name="attach-outline"></ion-icon>
+                </label>
+
+                <h3>Taqriz turini tanlang</h3>
+                
+                <div class="tan">
+                    <input class="on" type="radio" name="Sher" id="" checked>
+                    <h4>Ichki taqriz</h4>
+                    <input class="off" type="radio" name="Sher" id="">
+                    <h4>Tashqi taqriz</h4>
+                </div>
+
+                <a href="#">
+                    <div class="btn">
+                        <p>Maqolani saqlash</p>
+                    </div>
+                </a>
+                
+            </div> -->
+
+            <div class="inputs_responsive">
+
+                <div class="maqolaaaa">
+                    <h2>Maqola mavzusi:</h2>
+                    <input class="mavzu" type="text" placeholder="Maqola mavzusini kiriting">
+                </div>
+
+                <div class="maqolaaaa">
+                    <h2>Maqola haqida qisqacha ma’lumot:</h2>
+                    <textarea class="form-control" name="message" rows="5" placeholder="Maqola haqida yozing" required=""></textarea>
+                </div>
+
+                <div class="maqolaaaa">
+                    <h2>Maqola qaysi fanga tegishli:</h2> 
+
+
+
+                    <form class="select">
+                        <input class="chosen-value" type="text"  placeholder="Fanlar orasidan qidirish">
+                        <ul class="value-list">
+                          <li>Fizika</li>
+                          <li>Matematika</li>
+                          <li>Informatika</li>
+                          <li>Dasturlash</li>
+                        </ul>
+                    </form>
+
+
+
+
+                    <!-- <select id="cars">
+                        <option value="" disabled selected hidden>Gumanitar fanlar</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select> -->
+                </div>
+
+                <div class="maqolaaaa">
+                    <h2><b>DOC</b> yoki <b>PDF</b> fromatdagi <br>maqolangizni yuklang</h2>
+
+                    <div class="fayl">
+                        <label class="label" for="">
+                            <input type="file" name="" id="" accept=".doc">
+                            <ion-icon name="attach-outline"></ion-icon>
+                            <p>DOC formatda</p>
+                        </label>
+                        <label class="label" for="">
+                            <input type="file" name="" id="" accept=".pdf">
+                            <ion-icon name="attach-outline"></ion-icon>
+                            <p>PDF formatda</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="maqolaaaa">
+                    <h2>Taqriz faylini yuklang</h2>
+
+                    <label class="label" for="">
+                        <input type="file" name="" id="" accept=".pdf, .doc">
+                        <ion-icon name="attach-outline"></ion-icon>
+                        <p>Taqriz fayl</p>
+                    </label>
+                </div>
+
+                <div class="maqolaaaa">
+                    <div class="checbox"></div>
+                    <div class="checbox">
+                        <h2>Taqriz turini tanlang</h2>
+                
+                        <div class="tan1">
+                            <div class="chek">
+                                <div class="aylana">
+                                    <div style="display: none;" class="doira"></div>
+                                </div>
+                                <h4>Ichki taqriz</h4>
+                                <input onclick="inputss()" class="on1" type="checkbox" name="Sher" id="">
+                            </div>
+
+                            <div class="chek">
+                                <div class="aylana">
+                                    <div style="display: none;" class="doira1"></div>
+                                </div>
+                                <h4>Tashqi taqriz</h4>
+                                <input onclick="inputss1()" class="off1" type="checkbox" name="Sher" id="">
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="btn">
+                                <p>Maqolani saqlash</p>
+                            </div>
+                        </a>
+                    </div>                    
+                </div>
+
+                
+
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../Js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

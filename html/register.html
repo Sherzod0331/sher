@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/Universitet logo.png">
+    <link rel="stylesheet" href="../style/sass/register.css">
+    <title>BuxDU newspaper</title>
+</head>
+<body>
+    <a class="bosh_sahifa" href="../index.html">MJournal.uz</a>
+    <div class="rejim">
+        <ion-icon class="rejim_on" onclick="kun()" name="sunny-outline"></ion-icon>
+        <ion-icon class="rejim_off" onclick="tun()" name="moon-outline"></ion-icon>
+        <!-- <label for="">
+            <input type="checkbox" name="" id="">
+            <span class="check">
+                <div class="cricle_1"></div>
+                <div class="cricle_2"></div>
+            </span>
+        </label> -->
+    </div>
+    <div class="container">
+        <div class="begin">
+            <h1>Ro‘yxatdan o‘tish</h1>
+
+            <p>To‘liq FIO*</p>
+            <input type="text" placeholder="To‘liq FIO ni kiriting" required>
+            
+            <p>Elektron pochtangiz*</p>
+            <input type="email" placeholder="E-mail manzilingizni kiriting" required>
+            
+            <p>Login*</p>
+            <input type="text" placeholder="Login" required>
+
+            <div class="parol">
+                <div class="parol1">
+                    <p>Parol*</p>
+                    <img id="parol_1_o" onclick="parol_1_o()" src="../img/eye-off-outline.svg" alt="eye">
+                    <img id="parol_1" onclick="parol_1()" src="../img/eye-outline.svg" style="display: none;" alt="eye">
+                    <input id="myInput_1" type="password" placeholder="Parol" required>
+                </div>
+
+                <div class="parol1">
+                    <p>Parolni qayta kiriting*</p>
+                    <img id="parol_2_o" onclick="parol_2_o()" src="../img/eye-off-outline.svg" alt="eye">
+                    <img id="parol_2" onclick="parol_2()" src="../img/eye-outline.svg" style="display: none;" alt="eye">
+                    <input id="myInput_2" type="password" placeholder="Parolni takror" required>
+                </div>
+            </div>
+
+            <div class="btns">
+                <a href="./login.html">
+                    <div class="btn_1">
+                        <p>Orqaga</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="btn_2">
+                        <p>Ro'yxatdan o'tish</p>
+                    </div>
+                </a>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="../Js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/Universitet logo.png">
+    <link rel="stylesheet" href="../style/css/style.css">
+    <link rel="stylesheet" href="../style/sass/style.css">
+    <title>BuxDU newspaper</title>
+</head>
+<body>
+    <div id="menu">
+        <div class="container">
+            <a class="logo" href="../index.html">MJournal.uz</a>
+
+            <!-- <a href="../index.html">
+                <div class="btn">
+                    <p>Asosiy</p>
+                </div>
+            </a> -->
+            <a href="../html/maqola_yuborish.html">
+                <div class="btn">
+                    <p>Maqola yuborish</p>
+                </div>
+            </a>
+            <a href="../html/yuborilgan_maqolalar.html">
+                <div class="btn">
+                    <p>Yuborilgan maqolalar</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="btn active">
+                    <p>Obuna bo‘lish</p>
+                </div>
+            </a>
+
+            <div class="user">
+                <div class="user_img" onclick="user_menu()">
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+                
+                <h3>Sherzod Shokirov</h3>
+
+                <ion-icon class="user_menu_open" onclick="user_menu()" name="caret-down-outline"></ion-icon>
+                <ion-icon style="display: none;" class="user_menu_close" onclick="user_menu_close()" name="caret-up-outline"></ion-icon>
+
+                <div class="user_menu" style="display: none;">
+                    <a href="#">Accountni sozlash</a>
+                    <a href="#">Chiqish</a>
+                </div>
+            </div>
+
+            <!-- <img src="../img/lupa.svg" alt="Qidiruv"> -->
+
+            <!-- <a href="../html/login.html">Kirish</a>
+
+            <a href="../html/register.html">
+                <div class="btns">
+                    <p>Ro‘yhatdan o‘tish</p>
+                </div>
+            </a> -->
+        </div>
+
+        <div class="res_container">            
+            <a class="logo" href="../index.html">MJournal.uz</a>
+
+
+            <div class="search">
+                <!-- <label for="">
+                    <input type="search" name="" id="">
+                    <img src="../img/lupa.svg" alt="search">
+                </label> -->
+
+                <ion-icon id="Close" onclick="Close()" name="close-outline"></ion-icon>
+                <ion-icon id="Open" onclick="Open()" name="options-outline"></ion-icon>
+            </div>
+
+            <div id="menu_ver">
+                <!-- <a href="../index.html">
+                    <div class="btn">
+                        <p>Asosiy</p>
+                    </div>
+                </a> -->
+                <a href="../html/maqola_yuborish.html">
+                    <div class="btn">
+                        <p>Maqola yuborish</p>
+                    </div>
+                </a>
+                <a href="../html/yuborilgan_maqolalar.html">
+                    <div class="btn">
+                        <p>Yuborilgan maqolalar</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="btn active">
+                        <p>Obuna bo‘lish</p>
+                    </div>
+                </a>
+
+                <!-- <a class="btn margin" href="./html/login.html">
+                    <div class="btns">
+                        <p>Kirish</p>
+                    </div>
+                </a>
+                <a class="btn margin" href="./html/register.html">
+                    <div class="btns">
+                        <p>Ro‘yhatdan o‘tish</p>
+                    </div>
+                </a> -->
+                
+                <!-- <div class="sign">
+                    <a href="../html/login.html">Kirish</a>
+
+                    <a href="../html/register.html">
+                        <div class="btns">
+                            <p>Ro‘yhatdan o‘tish</p>
+                        </div>
+                    </a>
+                </div> -->
+
+                <div id="user">
+                    <div class="user">
+                        <div class="user_img" onclick="user_menu1()">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+    
+                        <h3 onclick="user_menu1()">Sherzod Shokirov</h3>
+                        
+                        <ion-icon class="user_menu_open1" onclick="user_menu1()" name="caret-down-outline"></ion-icon>
+                        <ion-icon style="display: none;" class="user_menu_close1" onclick="user_menu_close1()" name="caret-up-outline"></ion-icon>
+        
+                        <div class="user_menu1" style="display: none;">
+                            <a href="#">Accountni sozlash</a>
+                            <a href="#">Chiqish</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bosh_joy"></div>
+
+                <div class="eslatma">
+                    <ion-icon onclick="eslatman_close()" name="close-outline"></ion-icon>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, molestias animi. Natus a cupiditate quas aliquam! Possimus deserunt quibusdam omnis iure. Laudantium iure quod dolor, quia nulla praesentium accusamus ea!</p>
+                </div>
+
+                <div class="mavzu">
+                    <input type="text" placeholder="Maqola mavzusi">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../Js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

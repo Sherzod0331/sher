@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/Universitet logo.png">
+    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="stylesheet" href="./style/sass/style.css">
+    <link rel="stylesheet" href="./style/sass/index.css">
+    <link rel="stylesheet" href="./style/css/calendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+    <script>!function(e){"undefined"==typeof module?this.charming=e:module.exports=e}(function(e,n){"use strict";n=n||{};var t=n.tagName||"span",o=null!=n.classPrefix?n.classPrefix:"char",r=1,a=function(e){for(var n=e.parentNode,a=e.nodeValue,c=a.length,l=-1;++l<c;){var d=document.createElement(t);o&&(d.className=o+r,r++),d.appendChild(document.createTextNode(a[l])),n.insertBefore(d,e)}n.removeChild(e)};return function c(e){for(var n=[].slice.call(e.childNodes),t=n.length,o=-1;++o<t;)c(n[o]);e.nodeType===Node.TEXT_NODE&&a(e)}(e),e});
+    </script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css'><link rel="stylesheet" href="./style/css/swiper.css">
+    <title>BuxDU newspaper</title>
+</head>
+<body>
+    <div id="menu">
+        <div class="container">
+            <a class="logo" href="#">MJournal.uz</a>
+            <!-- <div class="rejim">
+                <ion-icon class="rejim_on" onclick="kun()" name="sunny-outline"></ion-icon>
+                <ion-icon class="rejim_off" onclick="tun()" name="moon-outline"></ion-icon>
+            </div> -->
+
+            <a href="#">
+                <div class="btn active">
+                    <p>Asosiy</p>
+                </div>
+            </a>
+            <a href="./html/Jurnal_haqida.html">
+                <div class="btn">
+                    <p>Jurnal haqida</p>
+                </div>
+            </a>
+            <a href="./html/Contacts.html">
+                <div class="btn">
+                    <p>Kontaktlar</p>
+                </div>
+            </a>
+            
+
+            <img onclick="search_input()" src="./img/lupa.svg" alt="Qidiruv">
+
+            <input class="search_input" type="search" name="" id="">
+
+            <a href="./html/login.html">Kirish</a>
+
+            <a href="./html/register.html">
+                <div class="btns">
+                    <p>Ro‘yhatdan o‘tish</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="res_container">            
+            <a class="logo" href="#">MJournal.uz</a>
+            <div class="search">
+                <!-- <label for="">
+                    <input type="search" name="" id="">
+                    <img src="./img/lupa.svg" alt="search">
+                </label> -->
+
+                <ion-icon id="Close" onclick="Close()" name="close-outline"></ion-icon>
+                <ion-icon id="Open" onclick="Open()" name="options-outline"></ion-icon>
+            </div>
+
+            <div id="menu_ver">
+                <a href="#">
+                    <div class="btn active">
+                        <p>Asosiy</p>
+                    </div>
+                </a>
+                <a href="./html/Jurnal_haqida.html">
+                    <div class="btn">
+                        <p>Jurnal haqida</p>
+                    </div>
+                </a>
+                <a href="./html/Contacts.html">
+                    <div class="btn">
+                        <p>Kontaktlar</p>
+                    </div>
+                </a>
+
+                
+                <a class="btn margin" href="./html/login.html">
+                    <div class="btns">
+                        <p>Kirish</p>
+                    </div>
+                </a>
+                <a class="btn margin" href="./html/register.html">
+                    <div class="btns">
+                        <p>Ro‘yhatdan o‘tish</p>
+                    </div>
+                </a>
+                
+                <!-- <div class="sign">
+                    <a href="./html/login.html">Kirish</a>
+
+                    <a href="./html/register.html">
+                        <div class="btns">
+                            <p>Ro‘yhatdan o‘tish</p>
+                        </div>
+                    </a>
+                </div> -->
+
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="begin">
+        <div class="container_c">
+            <div class="arxiv">
+                <div class="keyingi">
+                    <h1>Keyingi son</h1>
+                    <h5>Yangi son 29-yanvar kuni ushbu saytga yuklanadi.</h5>
+                    <p><b>Muallif:</b> Eshmatov T</p>
+                    <p><b>Mavzu:</b> Ijtimoiy tarmoqlar</p>
+                    <div class="img">
+                        <img src="./img/keyingi_son.png" alt="">
+                    </div>
+                </div>
+
+                <div class="calendars light">                    
+                    <h1>Arxiv</h1>
+                    <p>Maqolalarni sana bo‘yicha izlang</p>
+
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <span class="month-picker" id="month-picker">February</span>
+                            <div class="year-picker">
+                                <span class="year-change" id="prev-year">
+                                    <pre><</pre>
+                                </span>
+                                <span id="year">2021</span>
+                                <span class="year-change" id="next-year">
+                                    <pre>></pre>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="calendar-body">
+                            <div class="calendar-week-day">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-days"></div>
+                        </div>
+                        <div class="month-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_index">
+                <div class="sweper">
+                    <section>
+  
+                        <div class="swiper-container slideshow">
+                          
+                            <div class="swiper-wrapper">
+                            
+                                <div class="swiper-slide slide">
+                                    <div class="slide-image">
+                                        <img src="./img/unsplash_MxVkWPiJALs.png" alt="">
+                                        <div class="text">
+                                            <h1>VR virtual muhitda haqiqiy dunyoni qanday simule qilish</h1>
+                                            <p>Virtual haqiqat (VR) - bu foydalanuvchi o'zgacha hissi...</p>
+
+                                            <div class="user">
+                                                <img src="./img/user.png" alt="">
+                                                <p>Eshmatjonov Toshmatjon</p>
+                                            </div>
+                                            <p class="data">16-yanvar</p>
+                                        </div>
+                                    </div>
+                                    <span class="slide-title"></span>
+                                </div>
+                                <div class="swiper-slide slide">
+                                    <div class="slide-image">
+                                        <img src="./img/unsplash_MxVkWPiJALs.png" alt="">
+                                        <div class="text">
+                                            <h1>VR virtual muhitda haqiqiy dunyoni qanday simule qilish</h1>
+                                            <p>Virtual haqiqat (VR) - bu foydalanuvchi o'zgacha hissi...</p>
+
+                                            <div class="user">
+                                                <img src="./img/user.png" alt="">
+                                                <p>Eshmatjonov Toshmatjon</p>
+                                            </div>
+                                            <p class="data">16-yanvar</p>
+                                        </div>
+                                    </div>
+                                    <span class="slide-title"></span>
+                                </div>
+                                <div class="swiper-slide slide">
+                                    <div class="slide-image">
+                                        <img src="./img/unsplash_MxVkWPiJALs.png" alt="">
+                                        <div class="text">
+                                            <h1>VR virtual muhitda haqiqiy dunyoni qanday simule qilish</h1>
+                                            <p>Virtual haqiqat (VR) - bu foydalanuvchi o'zgacha hissi...</p>
+
+                                            <div class="user">
+                                                <img src="./img/user.png" alt="">
+                                                <p>Eshmatjonov Toshmatjon</p>
+                                            </div>
+                                            <p class="data">16-yanvar</p>
+                                        </div>
+                                    </div>
+                                    <span class="slide-title"></span>
+                                </div>
+
+                                <!-- style="background-image: url(https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80)" -->
+                            
+                                <!-- <div class="swiper-slide slide">
+                                    <div class="slide-image" style="background-image: url(https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e07d2457879a4e15577ec75a31023e47&auto=format&fit=crop&w=2134&q=80"></div>
+                                    <span class="slide-title">Meet ocean</span>
+                                </div>
+                            
+                                <div class="swiper-slide slide">
+                                    <div class="slide-image" style="background-image: url(https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=267bba9a4e280ec64388fe8fb01e9d1b&auto=format&fit=crop&w=1950&q=80"></div>
+                                    <span class="slide-title">Around the world</span>
+                                </div> -->
+                            
+                              <!-- <div class="swiper-slide slide">
+                                <div class="slide-imageswiper-lazy" data-background="https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80">
+                                </div>
+                                </div>
+                                <span class="slide-title">Exotic places</span>
+                              </div>
+                            
+                              <div class="swiper-slide slide">
+                                <div class="slide-image swiper-lazy" data-background="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e07d2457879a4e15577ec75a31023e47&auto=format&fit=crop&w=2134&q=80">
+                                </div>
+                                <span class="slide-title">Meet ocean</span>
+                              </div>
+                            
+                              <div class="swiper-slide slide">
+                                <div class="slide-image swiper-lazy" data-background="https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=267bba9a4e280ec64388fe8fb01e9d1b&auto=format&fit=crop&w=1950&q=80">
+                                </div>
+                                <span class="slide-title">Around the world</span>
+                              </div> -->
+                              
+                            </div>
+                          
+                          <div class="slideshow-pagination"></div>
+                          
+                          <div class="slideshow-navigation">
+                              <div class="slideshow-navigation-button prev"><span class="fas fa-arrow-left"></span></div>
+                              <div class="slideshow-navigation-button next"><span class="fas fa-arrow-right"></span></div>
+                          </div>
+                          
+                        </div>
+                        
+                      </section>
+                </div>
+
+                <h1>Jurnal haqida</h1>
+                <h2>Maqolalar jurnaliga Xush kelibsiz!</h2>
+                <p>Fan, muhandislik va texnologiya sohasida ilg'or tadqiqotlar xalqaro jurnali  ochiq kirish huquqiga ega, xalqaro, ekspertlar tomonidan ko'rib chiqiladigan, oylik jurnal bo'lib, sifatli tadqiqot ishlari bilan jamiyatga xizmat qilishga bag'ishlangan.</p>
+                <p>Jurnal fan, muhandislik va texnologiyaning turli fanlari bo'yicha innovatsion tadqiqotlarni ilgari surishdan iborat.MJurnal mualliflarni yozma sharhlar, qisqa xabarlar va ko'plab fanlar bilan bog'liq eslatmalar nuqtai nazaridan asl va nashr etilmagan ishlarni taqdim etishga taklif qiladi.</p>
+
+                <div class="contactss">
+                    <div class="text">
+                        <h1>Kontaktlar</h1>
+                        <div class="d-f">
+                            <img src="./img/phone.svg" alt="">
+                            <p>(+998) 65 221-29-14</p>
+                        </div>
+                        <div class="d-f">
+                            <img src="./img/phone2.svg" alt="">
+                            <p>8(365) 221-27-07</p>
+                        </div>
+                        <div class="d-f">
+                            <img src="./img/sms.svg" alt="">
+                            <p>buxdu_rektor@buxdu.uz</p>
+                        </div>
+                        <div class="d-f">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-telegram-plane"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="locatsiya">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.994842410703!2d64.42042371561955!3d39.762224203107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f50060d1c5c0027%3A0xf76b636757c475a5!2sBuxoro%20davlat%20universiteti%20-%20Fayzullo%20Xo&#39;jayev%20kampusi!5e0!3m2!1suz!2s!4v1644670413183!5m2!1suz!2s" width="100%" height="316px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                        <div class="d-f">
+                            <img src="./img/locatsiya.svg" alt="">
+                            <p>Buxoro shahar Muhammad Iqbol ko‘chasi, 11-uy</p>
+                        </div>
+                        <div class="d-f">
+                            <img src="./img/time.svg" alt="">
+                            <p>Yakshanbadan tashqari, har kuni 07:00 dan 15:00 gacha</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Js/main.js"></script>
+    <script src="./Js/Calendar.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script><script  src="./Js/swiper.js"></script>
+</body>
+</html>
